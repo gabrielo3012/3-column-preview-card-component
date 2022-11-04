@@ -1,0 +1,13 @@
+@media(max-width: 768px) {
+    .wrapper {
+      max-width: 600px;
+    }
+
+  .container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .card .text-info {
+    margin-bottom: 30px;
+  }
+}

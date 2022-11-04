@@ -1,0 +1,93 @@
+html{
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.container {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+.container .card img {
+  width: 60px;
+  margin-bottom: 35px;
+}
+
+.container .card.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.container .card.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container .card.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card .title-car {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 35px;
+}
+
+.card .text-info {
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 75px;
+  line-height: 1.7;
+}
+
+.card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(0, 0%, 95%);
+  background: transparent;
+}
+
+.card .btn.sedan a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card .btn.suv a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card .btn.luxury a {
+  color: hsl(179, 100%, 13%)
+}
